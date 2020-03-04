@@ -14,4 +14,3 @@ RUN pip3 install paramiko
 RUN pip3 install napalm
 RUN pip3 install pyntc
 RUN pip3 install ansible
-WORKDIR /network_automation_py3
