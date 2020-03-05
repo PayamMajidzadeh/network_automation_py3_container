@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM gns3/ubuntu
 WORKDIR /install
 RUN apt-get update
 RUN apt-get install net-tools -y
