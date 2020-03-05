@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+WORKDIR /install
 RUN apt-get update
 RUN apt-get install net-tools iproute2 iputils-ping traceroute curl host iperf3 \
     mtr socat ssh ssh-client tcpdump telnet nano vim bash-completion -y
@@ -12,3 +13,4 @@ RUN pip3 install paramiko
 RUN pip3 install napalm
 RUN pip3 install pyntc
 RUN pip3 install ansible
+WORKDIR /
