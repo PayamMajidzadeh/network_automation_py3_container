@@ -22,4 +22,4 @@ RUN mkdir /root/.ssh/ \
 VOLUME [ "/root","/usr", "/scripts" ]
 CMD [ "sh", "-c", "cd; exec bash -i" ]
 
-#WORKDIR /root
+WORKDIR /root
