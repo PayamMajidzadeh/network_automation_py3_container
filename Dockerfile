@@ -14,6 +14,7 @@ RUN pip3 install -U napalm
 RUN pip3 install -U pyntc
 RUN pip3 install -U ansible
 RUN pip3 install -U simplejson
+RUN pip3 install -U simple-crypt
 
 VOLUME [ "/root","/usr", "/scripts" ]
 CMD [ "sh", "-c", "cd; exec bash -i" ]
